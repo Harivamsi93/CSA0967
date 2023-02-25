@@ -1,0 +1,25 @@
+import java.util.scanner;  
+public class main  
+{  
+public static void reversenumber(int number)   
+{  
+if (number < 10)   
+{  
+system.out.println(number);  
+return;  
+}  
+else   
+{  
+system.out.print(number % 10);  
+reversenumber(number/10);  
+}  
+}  
+public static void main(string args[])  
+{  
+system.out.print("enter the number that you want to reverse: ");  
+scanner sc = new scanner(system.in);  
+int num = sc.nextint();  
+system.out.print("the reverse of the given number is: ");  
+reversenumber(num);  
+}  
+}  
